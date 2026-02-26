@@ -1,0 +1,31 @@
+name: TerrainFriendlyMob
+version: '1.0-SNAPSHOT'
+main: org.kite.terrainFriendlyMob.TerrainFriendlyMob
+api-version: '1.21'
+folia-supported: true
+authors: [ zzq ]
+
+commands:
+  tfm:
+    description: 控制地形友好生物插件模块
+    usage: |
+      /tfm - 显示帮助
+      /tfm list - 列出所有模块及其状态
+      /tfm <模块名> enable - 启用指定模块
+      /tfm <模块名> disable - 禁用指定模块
+      /tfm <模块名> status - 查看模块状态
+    aliases: [terrainfriendlymob]
+
+permissions:
+  tfm.admin:
+    description: 允许使用所有地形友好生物插件管理命令
+    default: op
+  tfm.list:
+    description: 允许查看模块列表
+    default: op
+  tfm.module.manage:
+    description: 允许启用/禁用模块
+    default: op
+  tfm.module.status:
+    description: 允许查看模块状态
+    default: op

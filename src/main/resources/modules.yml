@@ -1,0 +1,11 @@
+# 模块启用配置
+# 设置为 true 启用，false 禁用
+# 插件启动时会读取此配置
+
+modules:
+  creeper:
+    enabled: true
+  enderman:
+    enabled: true
+  enderdragon:
+    enabled: true
